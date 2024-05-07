@@ -13,6 +13,9 @@ def caesar_cipher(string, key)
     array_string = string.split("")
     p array_string
     encrypt_array = array_string.map do |letter|
+        if letter == ' ' || letter == '!'
+            next
+        end
         upcase = true if letter.upcase == letter
         shift_value = alphabet.index(letter.downcase) + key
         p shift_value
