@@ -27,5 +27,3 @@ def caesar_cipher(string, key)
 end
 
 puts caesar_cipher("What a string!", 5)
-
-puts alphabet.find_index('z')
