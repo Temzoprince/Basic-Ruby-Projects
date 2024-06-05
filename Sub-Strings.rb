@@ -26,5 +26,5 @@ dictionary = %w[below down go going horn how howdy it i low own part partner sit
 # puts substrings("below", dictionary)
 # puts substrings2('below', dictionary)
 
-# puts substrings("Howdy partner, sit down! How's it going?", dictionary)
+puts substrings("Howdy partner, sit down! How's it going?", dictionary)
 puts substrings2("Howdy partner, sit down! How's it going?", dictionary)
