@@ -16,7 +16,6 @@ def substrings2(string, dictionary)
   dictionary.each_with_object(Hash.new(0)) do |substring, list|
     words.each do |word|
       list[substring] += 1 if word.downcase.include? substring
-      # p list
     end
   end
 end
