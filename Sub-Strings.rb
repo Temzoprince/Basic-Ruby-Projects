@@ -1,15 +1,12 @@
 # frozen_string_literal: true
 
 def substrings(string, dictionary)
-  i = 0
   words = string.split(' ')
   substrings = Hash.new(0)
-  until i == dictionary.length
+  dictionary.each do |substring|
     words.each do |word|
-      # p dictionary[i]
-      substrings[dictionary[i]] += 1 if word.downcase.include? dictionary[i]
+      substrings[substring] += 1 if word.downcase.include? substring
     end
-    i += 1
   end
   substrings
 end
